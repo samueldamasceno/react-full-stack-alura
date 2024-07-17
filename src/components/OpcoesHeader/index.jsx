@@ -21,8 +21,8 @@ const opcoes = ['CATEGORIAS', 'FAVORITOS', 'MINHA ESTANTE']
 function OpcoesHeader() {
     return (
         <ListaOpcoes>
-            { opcoes.map((texto) => (
-            <Opcao><p>{texto}</p></Opcao>
+            { opcoes.map((opcao) => (
+            <Opcao key={opcao}><p>{opcao}</p></Opcao>
             ) ) }
         </ListaOpcoes>
     )
